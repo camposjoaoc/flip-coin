@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    text-align: center;
+}
+
+.result-card {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.flip-btn {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.flip-btn img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flip-btn:hover img {
+    transform: scale(1.9);
+
+}
